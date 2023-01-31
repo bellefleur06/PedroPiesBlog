@@ -9,6 +9,7 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1809/1809216.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
         * {
             box-sizing: border-box;
         }
@@ -24,7 +25,6 @@
             color: black;
         }
 
-        /* Header/Blog Title */
         .header {
             padding: 30px;
             font-size: 40px;
@@ -32,42 +32,35 @@
             background: white;
         }
 
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
         .leftcolumn {
             float: left;
             width: 75%;
         }
 
-        /* Right column */
         .rightcolumn {
             float: left;
             width: 25%;
             padding-left: 20px;
         }
 
-        /* Fake image */
         .fakeimg {
             background-color: #aaa;
             width: 100%;
             padding: 20px;
         }
 
-        /* Add a card effect for articles */
         .card {
             background-color: white;
             padding: 20px;
             margin-top: 20px;
         }
 
-        /* Clear floats after the columns */
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
 
-        /* Footer */
         .footer {
             padding: 20px;
             text-align: center;
@@ -75,7 +68,12 @@
             margin-top: 20px;
         }
 
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 425px) {
+            h2 {
+                font-size: 36px;
+            }
+        }
+
         @media screen and (max-width: 800px) {
 
             .leftcolumn,
@@ -95,31 +93,50 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <a href="#"><h2>Terror in Resonance - "Remember us. Remember that we lived"</h2></a>
+                <a href="#">
+                    <h2>Terror in Resonance - "Remember us. Remember that we lived"</h2>
+                </a>
                 <h5>Anime Review, Jan 31, 2023</h5>
-                <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e0bc1639524e169511fbabc9fcb15970.jpe" class="fakeimg"  style="height:100%;">
-                <p>"Terror in Resonance" is one of the best anime series in recent years, thanks to its intricate story, excellent direction, and stunning visuals.</p>
+                <img src="https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/e0bc1639524e169511fbabc9fcb15970.jpe"
+                    class="fakeimg" style="height:100%;">
+                <p>"Terror in Resonance" is one of the best anime series in recent years, thanks to its intricate story,
+                    excellent direction, and stunning visuals.</p>
             </div>
             <div class="card">
-                <a href="#"><h2>Mobile Suit Gundam: Hathaway's Flash - "How should I deal with this situation"</h2></a>
+                <a href="#">
+                    <h2>Mobile Suit Gundam: Hathaway's Flash - "How should I deal with this situation"</h2>
+                </a>
                 <h5>Anime Review, Jan 31, 2023</h5>
-                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F06%2Fnetflix-announces-release-date-for-mobile-suit-gundam-hathaway-0000.jpg?w=960&cbr=1&q=90&fit=max" class="fakeimg"  style="height:100%;">
-                <p>"Mobile Suit Gundam: Hathaway's Flash" is an excellent introduction to the three-film arc and one of the best mecha anime films I've seen in recent years.</p>
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F06%2Fnetflix-announces-release-date-for-mobile-suit-gundam-hathaway-0000.jpg?w=960&cbr=1&q=90&fit=max"
+                    class="fakeimg" style="height:100%;">
+                <p>"Mobile Suit Gundam: Hathaway's Flash" is an excellent introduction to the three-film arc and one of
+                    the best mecha anime films I've seen in recent years.</p>
             </div>
         </div>
         <div class="rightcolumn">
             <div class="card">
                 <h2>About Me</h2>
-                <img src="https://aniyuki.com/wp-content/uploads/2022/05/image-sad-anime-boy-aniyuki.com-6.jpg" class="fakeimg" style="height:100%;">
-                <p>Greetings, my name is <b><a href="#">PedroPies</a></b>. I am a huge fan of Japanese culture, especially anime, manga, and Japanese dramas and movies. For years, I've been watching and reading this type of media, and I've developed a keen sense of what makes a good story and what makes a bad one. <br><br> 
-                    I enjoy sharing my thoughts and opinions with others who share my interests, so I decided to start a blog to share my reviews with the rest of the world. I am here to offer my insights and recommendations, whether you are a fan of the latest hit anime series or a long-time devotee of classic manga. <br><br>
+                <img src="https://aniyuki.com/wp-content/uploads/2022/05/image-sad-anime-boy-aniyuki.com-6.jpg"
+                    class="fakeimg" style="height:100%;">
+                <p>Greetings, my name is <b><a href="#">PedroPies</a></b>. I am a huge fan of Japanese culture,
+                    especially anime, manga, and Japanese dramas and movies. For years, I've been watching and reading
+                    this type of media, and I've developed a keen sense of what makes a good story and what makes a bad
+                    one. <br><br>
+                    I enjoy sharing my thoughts and opinions with others who share my interests, so I decided to start a
+                    blog to share my reviews with the rest of the world. I am here to offer my insights and
+                    recommendations, whether you are a fan of the latest hit anime series or a long-time devotee of
+                    classic manga. <br><br>
                     "<b><a href="#">Join me</a></b> on my journey as I discover the best of Japanese entertainment."</p>
             </div>
             <div class="card">
                 <h3>Popular Post</h3>
-                <a href="#"><img src="https://www.justfocus.fr/wp-content/uploads/2021/08/EsBuX7vXIAcAGvZ.jpg" class="fakeimg" style="height:100%;"></a><br>
-                <a href="#"><img src="https://images.fanart.tv/fanart/typhoon-noruda-6227450a04c44.jpg" class="fakeimg" style="height:100%;"></a><br>
-                <a href="#"><img src="https://discoverypolyphonycom.files.wordpress.com/2021/02/criterion-rashomon-full-image_gallerycover-en-us-1528995608337._uy500_ux667_ri_vtdlnmbwynn4wtlwbcbzu8bguyvdjd_ttw_.jpg" class="fakeimg" style="height:100%;"></a>
+                <a href="#"><img src="https://www.justfocus.fr/wp-content/uploads/2021/08/EsBuX7vXIAcAGvZ.jpg"
+                        class="fakeimg" style="height:100%;"></a><br>
+                <a href="#"><img src="https://images.fanart.tv/fanart/typhoon-noruda-6227450a04c44.jpg" class="fakeimg"
+                        style="height:100%;"></a><br>
+                <a href="#"><img
+                        src="https://discoverypolyphonycom.files.wordpress.com/2021/02/criterion-rashomon-full-image_gallerycover-en-us-1528995608337._uy500_ux667_ri_vtdlnmbwynn4wtlwbcbzu8bguyvdjd_ttw_.jpg"
+                        class="fakeimg" style="height:100%;"></a>
             </div>
             <div class="card">
                 <h3>Follow Me</h3>
