@@ -7,82 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PedroPies Blog</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1809/1809216.png" type="image/x-icon">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins';
-            padding: 20px;
-            background: #f1f1f1;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .header {
-            padding: 30px;
-            font-size: 40px;
-            text-align: center;
-            background: white;
-        }
-
-        .leftcolumn {
-            float: left;
-            width: 75%;
-        }
-
-        .rightcolumn {
-            float: left;
-            width: 25%;
-            padding-left: 20px;
-        }
-
-        .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-        }
-
-        .card {
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: #ddd;
-            margin-top: 20px;
-        }
-
-        @media screen and (max-width: 425px) {
-            h2 {
-                font-size: 36px;
-            }
-        }
-
-        @media screen and (max-width: 800px) {
-
-            .leftcolumn,
-            .rightcolumn {
-                width: 100%;
-                padding: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -93,7 +19,7 @@
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
-                <a href="#">
+                <a href="single-blog.html">
                     <h2>Terror in Resonance - "Remember us. Remember that we lived"</h2>
                 </a>
                 <h5>Anime Review, Jan 31, 2023</h5>
@@ -103,7 +29,7 @@
                     excellent direction, and stunning visuals.</p>
             </div>
             <div class="card">
-                <a href="#">
+                <a href="single-blog.html">
                     <h2>Mobile Suit Gundam: Hathaway's Flash - "How should I deal with this situation"</h2>
                 </a>
                 <h5>Anime Review, Jan 31, 2023</h5>
@@ -139,14 +65,23 @@
                         class="fakeimg" style="height:100%;"></a>
             </div>
             <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
+                <h3>Follow And Message Me On</h3>
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-google"></a>
+                <a href="#" class="fab fa-github"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-youtube"></a>
+                <a href="#" class="fab fa-skype"></a>
+                <a href="#" class="fab fa-reddit"></a>
+                <a href="#" class="fab fa-telegram"></a>
+                <a href="#" class="fab fa-tiktok"></a>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <h2>Footer</h2>
+        <h2 class="footer-text">© Copyright 2023 PedroPies Blog. All Rights Reserved.</h2>
     </div>
 </body>
 
